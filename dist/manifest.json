@@ -1,0 +1,15 @@
+{
+  "short_name": "NQ Portfolio",
+  "name": "Nguyen Van Quang Portfolio",
+  "icons": [
+    {
+      "src": "/src/assets/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
