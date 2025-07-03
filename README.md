@@ -1,10 +1,10 @@
-# Vòng Quay Món Ăn (Food Spinner)
+# Tích cực quay tay 
 
-Ứng dụng web giúp bạn chọn ngẫu nhiên món ăn từ danh sách các món ăn yêu thích của bạn.
+Ứng dụng web giúp bạn chọn ngẫu nhiên món ăn chuyên dành cho bọn ăn "gì cũng được".
 
 ## Tính năng
 
-- Vòng quay món ăn với hiệu ứng quay mượt mà
+- Tích cực quay tay với hiệu ứng quay mượt mà
 - Thêm, sửa, xóa món ăn
 - Lưu danh sách món ăn vào bộ nhớ cục bộ (localStorage)
 - Giao diện thân thiện, đáp ứng trên nhiều thiết bị
