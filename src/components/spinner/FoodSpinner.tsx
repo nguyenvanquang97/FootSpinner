@@ -68,6 +68,10 @@ const FoodSpinner: React.FC = () => {
   };
 
   const deleteFood = async (id: string) => {
+    if (foods.length <= 10) {
+      alert('Không thể xóa món ăn khi còn 10 món hoặc ít hơn!');
+      return;
+    }
     const foodToDelete = foods.find(food => food.id === id);
     setFoods(foods.filter(food => food.id !== id));
   };
@@ -444,7 +448,13 @@ const FoodSpinner: React.FC = () => {
                         </button>
                         <button 
                           onClick={async () => await deleteFood(food.id)} 
-                          className="text-red-600 hover:text-red-800"
+                          disabled={foods.length <= 10}
+                          className={`w-5 h-5 ${
+                            foods.length <= 10 
+                              ? 'text-gray-400 cursor-not-allowed' 
+                              : 'text-red-600 hover:text-red-800'
+                          }`}
+                          title={foods.length <= 10 ? 'Không thể xóa khi còn 10 món hoặc ít hơn' : 'Xóa món ăn'}
                         >
                           <Trash2 className="w-5 h-5" />
                         </button>
